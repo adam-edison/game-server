@@ -1,0 +1,6 @@
+# Ignore node modules and logs
+.node_logs/
+node_modules/
+
+# Ignore config backups
+docker-compose.yml.bak
