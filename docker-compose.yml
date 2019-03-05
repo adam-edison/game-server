@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+    flows:
+        container_name: game-server
+        build:
+            context: .
+            dockerfile: .docker/node.dockerfile
+        volumes:
+            - .:/usr/src/app
+            - /usr/src/app/node_modules
+            - .node_logs:/root/.npm/
+        ports:
+            - "8080:3000"
+            - "9229:9229"
