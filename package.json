@@ -1,36 +1,36 @@
 {
-    "name": "game-server",
-    "version": "0.0.1",
-    "description": "Node and React Games for Eco-Friendly Impact",
-    "author": "Adam Edison <adam.edison@gmail.com>",
-    "license": "MIT",
-    "main": "server.js",
-    "scripts": {
-      "docker": "node docker.js && tail -f /dev/null",
-      "start": "node server.js",
-      "watch": "nodemon --ignore '**/tests/*' --ext js,hbs -L server.js",
-      "debug": "node --inspect-brk=0.0.0.0:9229 server.js",
-      "debug-watch": "nodemon -L --ext js,hbs --inspect-brk=0.0.0.0:9229 server.js",
-      "test": "mocha --opts ./tests/mocha.opts",
-      "test-watch": "nodemon -L --exec 'mocha --opts ./tests/mocha.opts'",
-      "test-debug": "nodemon -L --inspect-brk=0.0.0.0:9229 --exec 'mocha --opts ./tests/mocha.opts'",
-      "test-unit": "mocha --opts ./tests/unit/mocha.opts",
-      "test-integration": "mocha --opts ./tests/integration/mocha.opts"
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/adam-edison/game-server"
-    },
-    "dependencies": {
-      "body-parser": "^1.18.3",
-      "express": "^4.16.4",
-      "express-hbs": "^2.0.2",
-      "nodemon": "^1.18.10"
-    },
-    "devDependencies": {
-      "chai": "^4.2.0",
-      "mocha": "^5.2.0",
-      "rewire": "^4.0.1",
-      "supertest": "^3.4.2"
-    }
+  "name": "game-server",
+  "version": "0.0.1",
+  "description": "Node and React Games for Eco-Friendly Impact",
+  "author": "Adam Edison <adam.edison@gmail.com>",
+  "license": "MIT",
+  "main": "server.js",
+  "scripts": {
+    "docker": "node docker.js && tail -f /dev/null",
+    "start": "node server.js",
+    "watch": "nodemon --ignore '**/tests/*' --ext js,hbs -L server.js",
+    "debug": "node --inspect-brk=0.0.0.0:9229 server.js",
+    "debug-watch": "nodemon -L --ext js,hbs --inspect-brk=0.0.0.0:9229 server.js",
+    "test": "mocha --opts ./tests/mocha.opts",
+    "test-watch": "nodemon -L --exec 'mocha --opts ./tests/mocha.opts'",
+    "test-debug": "nodemon -L --inspect-brk=0.0.0.0:9229 --exec 'mocha --opts ./tests/mocha.opts'",
+    "test-unit": "mocha --opts ./tests/unit/mocha.opts",
+    "test-integration": "mocha --opts ./tests/integration/mocha.opts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adam-edison/game-server"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-hbs": "^2.0.2",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "rewire": "^4.0.1",
+    "supertest": "^3.4.2"
   }
+}
